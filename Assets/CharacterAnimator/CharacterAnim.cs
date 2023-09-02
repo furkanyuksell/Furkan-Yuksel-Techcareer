@@ -25,6 +25,7 @@ public class CharacterAnim : MonoBehaviour
         else if (Input.GetKey(KeyCode.W))
         {
             anim.SetBool(Walking,true);
+            transform.Translate(transform.forward * Time.deltaTime);
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
